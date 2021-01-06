@@ -4,7 +4,9 @@ using System.Text;
 
 namespace TextParser.Texts.TextItems.Sentences.SentenceItems
 {
-    interface ISentenceItem
+    public interface ISentenceItem
     {
+        string Chars { get; }
+
     }
 }

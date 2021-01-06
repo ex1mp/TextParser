@@ -4,7 +4,8 @@ using System.Text;
 
 namespace TextParser.Texts.TextItems.Sentences.SentenceItems.ImplementingClasses.Punctuations
 {
-    public interface IPunctuation
+    public interface IPunctuation : ISentenceItem
     {
+        Symbol Value { get; }
     }
 }
