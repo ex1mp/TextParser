@@ -8,6 +8,7 @@ using TextParser.TextCreation.TextParsing;
 using TextParser.TextProcessing;
 using TextParser.Texts;
 using TextParser.Texts.TextItems.Sentences.SentenceItems.ImplementingClasses.Punctuations;
+using TextParser.UserInteraction;
 
 namespace TextParser
 {
@@ -15,11 +16,7 @@ namespace TextParser
     {
         static void Main(string[] args)
         {
-            TextConverter textConverter = new TextConverter();
-            TextHandler textHandler = new TextHandler(new SeparatorContainer());
-            var text =textConverter.CreateText();
-            textConverter.SaveText(text);
-            Console.ReadLine();
+            MainControl mn = new MainControl();
           
         }
     }
