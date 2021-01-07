@@ -10,6 +10,7 @@ namespace TextParser.Texts.TextItems.Sentences
         void Add(ISentenceItem item);
         bool Remove(ISentenceItem item);
         List<ISentenceItem> sentenceItems { get; set; }
+        string SentenceInStringFormat();
         int Count { get; }
     }
 }

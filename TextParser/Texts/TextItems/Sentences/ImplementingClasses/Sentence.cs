@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TextParser.Texts.TextItems.Sentences.SentenceItems;
+using TextParser.Texts.TextItems.Sentences.SentenceItems.ImplementingClasses.Punctuations.ImplementingClasses;
 using TextParser.Texts.TextItems.Sentences.SentenceItems.ImplementingClasses.Words.ImplementingClasses;
 
 namespace TextParser.Texts.TextItems.Sentences.ImplementingClasses
@@ -30,6 +31,22 @@ namespace TextParser.Texts.TextItems.Sentences.ImplementingClasses
             {
                 throw new NullReferenceException("");
             }
+        }
+        public string SentenceInStringFormat()
+        {
+            string sentence = "";
+            foreach (var item in sentenceItems)
+            {
+                if (item is Word)
+                {
+                    sentence += " " + item.Chars ;
+                }
+                if (item is Punctuation)
+                {
+                    sentence +=item.Chars;
+                } 
+            }
+            return sentence;
         }
 
         public bool Remove(ISentenceItem item)
