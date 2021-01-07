@@ -53,10 +53,10 @@ namespace TextParser.TextCreation
                     "part of the file is locked.",
                     e.GetType().Name);
             }
-            catch (ArgumentException e)
-            {
-                Console.WriteLine("{0}: {1}", e.GetType().Name, e.Message);
-            }
+            //catch (ArgumentException e)
+            //{
+            //    Console.WriteLine("{0}: {1}", e.GetType().Name, e.Message);
+            //}
 
             return text;
         }

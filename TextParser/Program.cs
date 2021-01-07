@@ -18,7 +18,7 @@ namespace TextParser
             TextConverter textConverter = new TextConverter();
             TextHandler textHandler = new TextHandler(new SeparatorContainer());
             var text =textConverter.CreateText();
-
+            textConverter.SaveText(text);
             Console.ReadLine();
           
         }

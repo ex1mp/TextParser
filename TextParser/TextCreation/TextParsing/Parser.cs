@@ -52,7 +52,7 @@ namespace TextParser.TextCreation.TextParsing
                         buffer.Append(currentString.Substring(0, firstSentenceSeparatorOccurence + firstSentenceSeparator.Length));
                         textResult.Sentences.Add(SentenceParser.ParseSentence(buffer.ToString()));
                         buffer.Clear();
-                        buffer.Append(currentString.Substring(firstSentenceSeparatorOccurence + firstSentenceSeparator.Length - 1, currentString.Length - 1 - firstSentenceSeparatorOccurence + firstSentenceSeparator.Length - 1));
+                        buffer.Append(currentString.Substring(firstSentenceSeparatorOccurence + firstSentenceSeparator.Length , currentString.Length - firstSentenceSeparatorOccurence - firstSentenceSeparator.Length ));
                     }
                     else
                     {

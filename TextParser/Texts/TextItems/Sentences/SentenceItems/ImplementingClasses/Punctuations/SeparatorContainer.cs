@@ -7,7 +7,7 @@ namespace TextParser.Texts.TextItems.Sentences.SentenceItems.ImplementingClasses
 {
     public class SeparatorContainer
     {
-        private string[] sentenceSeparators = new string[] { "?", "!", ".", "...", "?!" };
+        private string[] sentenceSeparators = new string[] { "?", "!", ".", "...", "?!","??","!!","!!!" };
         private string[] wordSeparators = new string[] { ",", "-", ":", "(", ")" };
 
         public IEnumerable<string> SentenceSeparators()
